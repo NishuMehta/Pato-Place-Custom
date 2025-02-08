@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- font2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- css styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>GALLERY - PATO PLACE</title>
+
+    <style>
+        .column {
+        float: left;
+        display: none; 
+        }
+
+        .show {
+        display: block;
+        }
+
+        .btns {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        }
+
+        .btns:hover {
+        background-color: #ddd;
+        }
+
+        .btns.activ {
+        background-color: black;
+        color: white;
+        }
+    </style>
+</head>
+<body class="m-0 p-0">
+
+    <header>
+        <div class="container-fluid p-0 position-fixed z-2">
+            <nav class="navbar navbar-expand-lg bg-white w-100 px-5 py-2 px-md-2 border-top border-5 border-danger z-3">
+                <div class="container-fluid">
+                    <button class="navbar-toggler btn-sm border-0 ps-0 ms-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <img class="text-danger d-flex justify-content-center" src="./images/logo-1.png" alt="">
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo01">
+                        <div class="nav-img d-none d-lg-flex justify-content-center">
+                            <img class="text-danger d-flex justify-content-center" src="./images/logo-1.png" alt="">
+                        </div>
+                        <ul class="nav d-flex justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="menu.html">MENU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="reservation.html">RESERVATION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active txt-blk" href="gallery.html">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                        <ul class="nav d-flex justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" aria-current="page" href="#"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="#"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="#"><i class="bi bi-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid p-0 position-relative first-title">
+        <img class="w-100 img-fluid" src="./images/gallery-bg.jpg" alt="">
+        <h1 class="title1 text-white position-absolute top-50 start-50 translate-middle">GALLERY</h1>
+    </div>
+
+    <div class="container py-5">
+        <div class=" d-block d-md-flex justify-content-center w-100 text-center" id="myBtnContainer">
+            <button class="btns mx-2 px-4 fs-4 activ" onclick="filterSelection('all')">All Photos</button>
+            <button class="btns mx-2 px-4 fs-4" onclick="filterSelection('food')"> Food</button>
+            <button class="btns mx-2 px-4 fs-4" onclick="filterSelection('interior')"> Interior</button>
+            <button class="btns mx-2 px-4 fs-4" onclick="filterSelection('events')"> Events</button>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5">
+            <div class="row px-lg-5">
+                <div class="column interior col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-09.jpg.jpg" alt="">
+                </div>
+                <div class="column food col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-10.jpg.webp" alt="">
+                </div>
+                <div class="column events col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-11.jpg.webp" alt="">
+                </div>
+                <div class="column  food col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-12.jpg.webp" alt="">
+                </div>
+                <div class="column events col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-13.jpg.webp" alt="">
+                </div>
+                <div class="column food col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-14.jpg.webp" alt="">
+                </div>
+                <div class="column events col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-15.jpg.webp" alt="">
+                </div>
+                <div class="column  food col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-16.jpg.webp" alt="">
+                </div>
+                <div class="column  food col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-17.jpg.webp" alt="">
+                </div>
+                <div class="column  interior col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-18.jpg.webp" alt="">
+                </div>
+                <div class="column  interior col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-19.jpg.webp" alt="">
+                </div>
+                <div class="column events interior col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-20.jpg.webp" alt="">
+                </div>
+                <div class="column  events col-lg-4 col-md-6 col-sm-12 pb-5">
+                    <img class="w-100 rounded rounded-4" src="./images/gallery/photo-gallery-21.jpg.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid bg-dark p-5">
+            <div class="container p-lg-5 p-md-5 p-sm-0">
+                <div class="row p-2">
+                    <div class="col-lg-4 col-md-6 text-secondary para">
+                        <div class="my-5 fw-light">
+                            <h5 class="text-white mb-4">CONTACT US</h5>
+                            <p> <i class="bi bi-geo-alt-fill me-2"></i> 8th floor, 379 Hudson St, New York, NY 10018</p>
+                            <p> <i class="bi bi-telephone-fill me-2"></i> (+1) 96 716 6879</p>
+                            <p> <i class="bi bi-envelope-fill me-2"></i> contact@site.com</p>
+                        </div>
+                        <div class="timing">
+                            <h5 class="text-white mb-4">OPENING TIMES</h5>
+                            <p>09:30 AM - 11:00 PM</p>
+                            <p>Everyday</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-secondary para">
+                        <div class="my-5 fw-light">
+                            <h5 class="text-white mb-4">LATEST TWITTER</h5>
+                            <div class="tweet mb-4">
+                                <h6 class="text-danger"> <i class="bi bi-twitter me-2 text-white"></i> @user123</h6>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, veniam!</p>
+                                <p>21 Dec 2017</p>
+                            </div>
+                            <div class="tweet">
+                                <h6 class="text-danger"> <i class="bi bi-twitter me-2 text-white"></i> @user123</h6>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, veniam!</p>
+                                <p>21 Dec 2017</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-secondary para">
+                        <div class=" my-5 fw-light">
+                            <h5 class="text-white mb-4">GALLERY</h5>
+                            <div class="row">
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-1.webp" alt="">
+                                </div>
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-2.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-3.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-4.webp" alt="">
+                                </div>
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-5.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-6.webp" alt="">
+                                </div>
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-7.webp" alt="">
+                                </div>
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-8.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-9.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-10.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-11.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-12.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-5 py-4 bg-black px-sm-2">
+            <div class="container px-lg-5 px-sm-0">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                        <div class="icons-list text-decoration-none d-flex justify-content-center text-white">
+                            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-white mx-5"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                        <div class="icons-list text-decoration-none text-white">
+                            <p class="text-center">@2017 pato restaurant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="gallery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-- font2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- font3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- css styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>BLOG - PATO PLACE</title>
+</head>
+<body class="m-0 p-0" style="margin:0;">
+
+    <!-- nav -->
+    <header>
+        <div class="container-fluid p-0 position-fixed z-2">
+            <nav class="navbar navbar-expand-lg bg-white w-100 px-5 py-2 px-md-2 border-top border-5 border-danger z-3">
+                <div class="container-fluid">
+                    <button class="navbar-toggler btn-sm border-0 ps-0 ms-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <img class="text-danger d-flex justify-content-center" src="./images/logo-1.png" alt="">
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo01">
+                        <div class="nav-img d-none d-lg-flex justify-content-center">
+                            <img class="text-danger d-flex justify-content-center" src="./images/logo-1.png" alt="">
+                        </div>
+                        <ul class="nav d-flex justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" aria-current="page" href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="menu.html">MENU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="reservation.html">RESERVATION</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="gallery.html">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active txt-blk" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                        <ul class="nav d-flex justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" aria-current="page" href="#"><i class="bi bi-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="#"><i class="bi bi-facebook"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link txt-blk" href="#"><i class="bi bi-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- title -->
+    <div class="container-fluid p-0 position-relative first-title">
+        <img class="w-100 img-fluid" src="./images/blog-bg.jpg" alt="">
+        <h1 class="title1 text-white position-absolute top-50 start-50 translate-middle">BLOG</h1>
+    </div>
+
+    <div class="container-fluid p-0 px-5">
+            <div class="row p-0 py-5 p-md-5">
+                <div class="col-lg-9 col-md-12 col-sm-12 px-lg-5">
+                    <div class="cards blog1 rounded-4 mb-5" id="blog-01">
+                        <img class="card-img-top w-100 rounded-4" src="./images/blog-01.webp" alt="">
+                        <div class="blog-content card-body px-2 py-4">
+                            <h1 class="font-poppins fw-light pt-4">BEST FOR WINE</h1>
+                            <h6 class="font-montserrat fw-light pb-4">by Admin | 28 August, 2024 | Cooking, Food</h6>
+                            <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                            <a href="#" id="mybtn" data-bs-toggle="modal" data-bs-target="#blog1" class="txt-blk mt-5 font-montserrat fw-light text-decoration-none">CONTINUE READING &rarr;</a>              
+                        </div>
+                        <div class="modal bd-example-modal-lg" id="blog1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content rounded-4 rounded-4 bg-body-secondary py-3"> 
+                                    <div class="modal-header">
+                                        <h1 class="font-poppins fw-light">BEST FOR WINE</h1>
+                                    </div>                               
+                                    <div class="modal-body">
+                                        <img class="card-img-top w-100 rounded-4 pb-5" src="./images/blog-01.webp" alt="">
+                                        <h6 class="font-montserrat fw-light">Author : Admin</h6>
+                                        <h6 class="font-montserrat fw-light pb-4">Date :  28 August, 2024</h6>
+                                        <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                                        <p class="font-montserrat fw-400 fs-6">Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae.</p>
+                                    </div>                               
+                                    <div class="modal-footer">
+                                        <p class="font-montserrat"><b>Tags</b> : Cooking, Food
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards blog2 rounded-4 mb-5" id="blog-02">
+                        <img class="card-img-top w-100 rounded-4" src="./images/blog-02.webp" alt="">
+                        <div class="blog-content card-body px-2 py-4">
+                            <h1 class="font-poppins fw-light pt-4">EGGS AND CHEESE</h1>
+                            <h6 class="font-montserrat fw-light pb-4">by Admin | 28 August, 2024 | Cooking, Food | 8 Comments</h6>
+                            <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                            <a href="#" id="mybtn" data-bs-toggle="modal" data-bs-target="#blog2" class="txt-blk mt-5 font-montserrat fw-light text-decoration-none">CONTINUE READING &rarr;</a>              
+                        </div>
+                        <div class="modal bd-example-modal-lg" id="blog2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content rounded-4 rounded-4 bg-body-secondary py-3"> 
+                                    <div class="modal-header">
+                                        <h1 class="font-poppins fw-light">EGGS AND CHEESE</h1>
+                                    </div>                               
+                                    <div class="modal-body">
+                                        <img class="card-img-top w-100 rounded-4 pb-5" src="./images/blog-02.webp" alt="">
+                                        <h6 class="font-montserrat fw-light">Author : Admin</h6>
+                                        <h6 class="font-montserrat fw-light pb-4">Date :  28 August, 2024</h6>
+                                        <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                                        <p class="font-montserrat fw-400 fs-6">Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae.</p>
+                                    </div>                               
+                                    <div class="modal-footer">
+                                        <p class="font-montserrat"><b>Tags</b> : Cooking, Food
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards blog3 rounded-4 mb-5" id="blog-03">
+                        <img class="card-img-top w-100 rounded-4" src="./images/blog-03.webp" alt="">
+                        <div class="blog-content card-body px-2 py-4">
+                            <h1 class="font-poppins fw-light pt-4">THE WEDDING PARTY</h1>
+                            <h6 class="font-montserrat fw-light pb-4">by Admin | 28 August, 2024 | Cooking, Food | 8 Comments</h6>
+                            <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                            <a href="#" id="mybtn" data-bs-toggle="modal" data-bs-target="#blog3" class="txt-blk mt-5 font-montserrat fw-light text-decoration-none">CONTINUE READING &rarr;</a>              
+                        </div>
+                        <div class="modal bd-example-modal-lg" id="blog3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content rounded-4 rounded-4 bg-body-secondary py-3"> 
+                                    <div class="modal-header">
+                                        <h1 class="font-poppins fw-light">THE WEDDING PARTY</h1>
+                                    </div>                               
+                                    <div class="modal-body">
+                                        <img class="card-img-top w-100 rounded-4 pb-5" src="./images/blog-03.webp" alt="">
+                                        <h6 class="font-montserrat fw-light">Author : Admin</h6>
+                                        <h6 class="font-montserrat fw-light pb-4">Date :  28 August, 2024</h6>
+                                        <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                                        <p class="font-montserrat fw-400 fs-6">Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae.</p>
+                                    </div>                               
+                                    <div class="modal-footer">
+                                        <p class="font-montserrat"><b>Tags</b> : Cooking, Food
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards blog4 rounded-4 mb-5" id="blog-04">
+                        <img class="card-img-top w-100 rounded-4" src="https://preview.colorlib.com/theme/pato/images/blog-05.jpg" alt="">
+                        <div class="blog-content card-body px-2 py-4">
+                            <h1 class="font-poppins fw-light pt-4">COOKING RECIPE DELICIOUS</h1>
+                            <h6 class="font-montserrat fw-light pb-4">by Admin | 28 August, 2024 | Cooking, Food | 8 Comments</h6>
+                            <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                            <a href="#" id="mybtn" data-bs-toggle="modal" data-bs-target="#blog4" class="txt-blk mt-5 font-montserrat fw-light text-decoration-none">CONTINUE READING &rarr;</a>              
+                        </div>
+                        <div class="modal bd-example-modal-lg" id="blog4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content rounded-4 rounded-4 bg-body-secondary py-3"> 
+                                    <div class="modal-header">
+                                        <h1 class="font-poppins fw-light">COOKING RECIPE DELICIOUS</h1>
+                                    </div>                               
+                                    <div class="modal-body">
+                                        <img class="card-img-top w-100 rounded-4 pb-5" src="./images/blog-04.webp" alt="">
+                                        <h6 class="font-montserrat fw-light">Author : Admin</h6>
+                                        <h6 class="font-montserrat fw-light pb-4">Date :  28 August, 2024</h6>
+                                        <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                                        <p class="font-montserrat fw-400 fs-6">Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae.</p>
+                                    </div>                               
+                                    <div class="modal-footer">
+                                        <p class="font-montserrat"><b>Tags</b> : Cooking, Food
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards blog5 rounded-4 mb-5" id="blog-05">
+                        <img class="card-img-top w-100 rounded-4" src="./images/blog-05.webp" alt="">
+                        <div class="blog-content card-body px-2 py-4">
+                            <h1 class="font-poppins fw-light pt-4">THE BEST SCENERIES</h1>
+                            <h6 class="font-montserrat fw-light pb-4">by Admin | 28 August, 2024 | Cooking, Food | 8 Comments</h6>
+                            <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                            <a href="#" id="mybtn" data-bs-toggle="modal" data-bs-target="#blog5" class="txt-blk mt-5 font-montserrat fw-light text-decoration-none">CONTINUE READING &rarr;</a>              
+                        </div>
+                        <div class="modal bd-example-modal-lg" id="blog5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content rounded-4 rounded-4 bg-body-secondary py-3"> 
+                                    <div class="modal-header">
+                                        <h1 class="font-poppins fw-light">THE BEST SCENERIES</h1>
+                                    </div>                               
+                                    <div class="modal-body">
+                                        <img class="card-img-top w-100 rounded-4 pb-5" src="./images/blog-05.webp" alt="">
+                                        <h6 class="font-montserrat fw-light">Author : Admin</h6>
+                                        <h6 class="font-montserrat fw-light pb-4">Date :  28 August, 2024</h6>
+                                        <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                                        <p class="font-montserrat fw-400 fs-6">Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae.</p>
+                                    </div>                               
+                                    <div class="modal-footer">
+                                        <p class="font-montserrat"><b>Tags</b> : Cooking, Food
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards blog6 rounded-4 mb-5" id="blog-06">
+                        <img class="card-img-top w-100 rounded-4" src="./images/blog-06.jpg.webp" alt="">
+                        <div class="blog-content card-body px-2 py-4">
+                            <h1 class="font-poppins fw-light pt-4">PIZZA IS PREPARED FRESH</h1>
+                            <h6 class="font-montserrat fw-light pb-4">by Admin | 28 August, 2024 | Cooking, Food | 8 Comments</h6>
+                            <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                            <a href="#" id="mybtn" data-bs-toggle="modal" data-bs-target="#blog6" class="txt-blk mt-5 font-montserrat fw-light text-decoration-none">CONTINUE READING &rarr;</a>              
+                        </div>
+                        <div class="modal bd-example-modal-lg" id="blog6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content rounded-4 rounded-4 bg-body-secondary py-3"> 
+                                    <div class="modal-header">
+                                        <h1 class="font-poppins fw-light">PIZZA IS PREPARED FRESH</h1>
+                                    </div>                               
+                                    <div class="modal-body">
+                                        <img class="card-img-top w-100 rounded-4 pb-5" src="./images/blog-06.jpg.webp" alt="">
+                                        <h6 class="font-montserrat fw-light">Author : Admin</h6>
+                                        <h6 class="font-montserrat fw-light pb-4">Date :  28 August, 2024</h6>
+                                        <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                                        <p class="font-montserrat fw-400 fs-6">Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae.</p>
+                                    </div>                               
+                                    <div class="modal-footer">
+                                        <p class="font-montserrat"><b>Tags</b> : Cooking, Food
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards blog7 rounded-4 mb-5" id="blog-07">
+                        <img class="card-img-top w-100 rounded-4" src="./images/blog-07.jpg.webp" alt="">
+                        <div class="blog-content card-body px-2 py-4">
+                            <h1 class="font-poppins fw-light pt-4">SAVORY & SWEET DELIGHTS</h1>
+                            <h6 class="font-montserrat fw-light pb-4">by Admin | 28 August, 2024 | Cooking, Food | 8 Comments</h6>
+                            <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                            <a href="#" id="mybtn" data-bs-toggle="modal" data-bs-target="#blog7" class="txt-blk mt-5 font-montserrat fw-light text-decoration-none">CONTINUE READING &rarr;</a>              
+                        </div>
+                        <div class="modal bd-example-modal-lg" id="blog7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content rounded-4 rounded-4 bg-body-secondary py-3"> 
+                                    <div class="modal-header">
+                                        <h1 class="font-poppins fw-light">SAVORY & SWEET DELIGHTS</h1>
+                                    </div>                               
+                                    <div class="modal-body">
+                                        <img class="card-img-top w-100 rounded-4 pb-5" src="./images/blog-07.jpg.webp" alt="">
+                                        <h6 class="font-montserrat fw-light">Author : Admin</h6>
+                                        <h6 class="font-montserrat fw-light pb-4">Date :  28 August, 2024</h6>
+                                        <p class="font-montserrat fw-400 fs-6">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+                                        <p class="font-montserrat fw-400 fs-6">Cras scelerisque auctor gravida. Nunc fermentum luctus rhoncus. Nulla vulputate fermentum convallis. In quis pellentesque tortor. Cras metus nibh, gravida vitae ante vel, finibus semper tellus. Nulla vel tincidunt magna. Morbi tempor velit lectus, eu commodo quam volutpat vitae.</p>
+                                    </div>                               
+                                    <div class="modal-footer">
+                                        <p class="font-montserrat"><b>Tags</b> : Cooking, Food
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 ps-3 border border-start-1 border-secondary-subtle border-end-0 border-top-0 border-bottom-0">
+                    <div class="categories mt-3 py-3">
+                        <h4 class="para pb-5 border border-start-0 border-end-0 border-top-0 border-secondary-subtle">CATEGORIES</h4>
+                        <p class="font-montserrat pb-2 fs-6 border border-start-0 border-end-0 border-top-0 border-secondary-subtle"><a href="#" class="txt-blk">COOKING RECIPE</a></p>
+                        <p class="font-montserrat pb-2 fs-6 border border-start-0 border-end-0 border-top-0 border-secondary-subtle"><a href="#" class="txt-blk">DELICIOUS FOODS</a></p>
+                        <p class="font-montserrat pb-2 fs-6 border border-start-0 border-end-0 border-top-0 border-secondary-subtle"><a href="#" class="txt-blk">EVENTS DESIGN</a></p>
+                        <p class="font-montserrat pb-2 fs-6 border border-start-0 border-end-0 border-top-0 border-secondary-subtle"><a href="#" class="txt-blk">RESTAURANT PLACE</a></p>
+                        <p class="font-montserrat pb-2 fs-6 border border-start-0 border-end-0 border-top-0 border-secondary-subtle"><a href="#" class="txt-blk">WORDPRESS</a></p>
+                    </div>
+                    <div class="most-popular mt-5 py-3">
+                        <h4 class="para pb-5">MOST POPULAR</h4>
+                        <div class="txt-blk">
+                            <h6>BEST PLACES FOR WINE</h6>
+                            <p class="font-montserrat fw-light">3 days ago</P>
+                        </div>
+                        <div class="txt-blk">
+                            <h6>EGGS AND CHEESE</h6>
+                            <p class="font-montserrat fw-light">3 days ago</P>
+                        </div>   
+                        <div class="txt-blk">
+                            <h6>STYLE THE WEDDING PARTY</h6>
+                            <p class="font-montserrat fw-light">3 days ago</P>
+                        </div>   
+                        <div class="txt-blk">
+                            <h6>COOKING RECIPE DELICIOUS</h6>
+                            <p class="font-montserrat fw-light">3 days ago</P>
+                        </div>   
+                        <div class="txt-blk">
+                            <h6>PIZZA IS PREPARED FRESH</h6>
+                            <p class="font-montserrat fw-light">3 days ago</P>
+                        </div>                           
+
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- quick sign-up -->
+    <div class="container-fluid bg-body-secondary py-5 px-lg-5 px-md-5 px-sm-0 px-xs-0">
+        <div class="px-lg-5 px-md-0 px-sm-0">
+            <div class="container d-lg-flex d-md-flex justify-content-evenly align-items-center  p-lg-5 p-md-0 d-sm-block text-center ">
+                <h4 class="mt-2">SPECIALS SIGN UP</h4>
+                <input type="email" id="email" class="px-4 py-2 rounded-3 border border-secondary w-50 mx-auto mt-2" name="email" id="" placeholder="Email Address"> <br>
+                <button type="button" class="btn px-4 btn-sm book-btn btn-dark border-2 mt-2">SIGN-UP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid bg-dark p-5">
+            <div class="container p-lg-5 p-md-5 p-sm-0">
+                <div class="row p-2">
+                    <div class="col-lg-4 col-md-6 text-secondary para">
+                        <div class="my-5 fw-light">
+                            <h5 class="text-white mb-4">CONTACT US</h5>
+                            <p> <i class="bi bi-geo-alt-fill me-2"></i> 8th floor, 379 Hudson St, New York, NY 10018</p>
+                            <p> <i class="bi bi-telephone-fill me-2"></i> (+1) 96 716 6879</p>
+                            <p> <i class="bi bi-envelope-fill me-2"></i> contact@site.com</p>
+                        </div>
+                        <div class="timing">
+                            <h5 class="text-white mb-4">OPENING TIMES</h5>
+                            <p>09:30 AM - 11:00 PM</p>
+                            <p>Everyday</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 text-secondary para">
+                        <div class="my-5 fw-light">
+                            <h5 class="text-white mb-4">LATEST TWITTER</h5>
+                            <div class="tweet mb-4">
+                                <h6 class="text-danger"> <i class="bi bi-twitter me-2 text-white"></i> @user123</h6>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, veniam!</p>
+                                <p>21 Dec 2017</p>
+                            </div>
+                            <div class="tweet">
+                                <h6 class="text-danger"> <i class="bi bi-twitter me-2 text-white"></i> @user123</h6>
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, veniam!</p>
+                                <p>21 Dec 2017</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-secondary para">
+                        <div class=" my-5 fw-light">
+                            <h5 class="text-white mb-4">GALLERY</h5>
+                            <div class="row">
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-1.webp" alt="">
+                                </div>
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-2.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-3.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-4.webp" alt="">
+                                </div>
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-5.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-6.webp" alt="">
+                                </div>
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-7.webp" alt="">
+                                </div>
+                                <div class="contact col-3 mb-2 p-1">
+                                    <img class="w-100" src="./images/footer-8.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-9.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-10.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-11.webp" alt="">
+                                </div>
+                                <div class="contact col-3 p-1">
+                                    <img class="w-100" src="./images/footer-12.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-5 py-4 bg-black px-sm-2">
+            <div class="container px-lg-5 px-sm-0">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                        <div class="icons-list text-decoration-none d-flex justify-content-center text-white">
+                            <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-white mx-5"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mt-4">
+                        <div class="icons-list text-decoration-none text-white">
+                            <p class="text-center">@2017 pato restaurant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"> </script>
+</html>
